@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textData"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Data" />
+
+        <TextView
+            android:id="@+id/textDataRetorno"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Data de Retorno" />
+
+        <TextView
+            android:id="@+id/textDestino"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Destino" />
+
+        <TextView
+            android:id="@+id/textPlaca"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Placa do Veículo" />
+
+        <TextView
+            android:id="@+id/textKm"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="KM Total Atual" />
+
+        <TextView
+            android:id="@+id/textAbastecido"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="Abastecido" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="Mapa da cidade de Destino" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="MissingClass" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Voltar"
+                android:backgroundTint="#b8c1ca"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="10dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnExcluir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Excluir"
+                android:backgroundTint="#ff1717"
+                android:textColor="@android:color/white"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

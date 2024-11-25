@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nova Viagem"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Título"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/Data"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Data"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/Retorno"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Data de Retorno"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/Destino"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Cidade de Destino"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Placa"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Placa do Veículo"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/km"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="KM Total Atual"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/abastecido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Foi abastecido ?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Voltar"
+                android:backgroundTint="#b8c1ca"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="10dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cadastrar"
+                android:backgroundTint="#3470ED"
+                android:textColor="@android:color/white"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
